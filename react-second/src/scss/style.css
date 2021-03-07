@@ -34,13 +34,17 @@
 }
 
 .slider {
-  width: auto;
-  height: 500px;
+  height: auto;
+  width: 100%;
   background: black;
   background: linear-gradient(180deg, black 0%, black 63%, white 100%);
 }
 .slider img {
-  height: 500px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 10px;
 }
 
 * {
