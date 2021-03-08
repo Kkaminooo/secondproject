@@ -1,13 +1,25 @@
 .slider {
   height: auto;
   width: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 63%, rgba(255,255,255,1) 100%);
-  img{
-    height: 800px;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 63%, rgba(255, 255, 255, 1) 100%);
+
+  div {
     display: flex;
     justify-content: center;
     align-self: center;
-    border-radius: 10px;
+    img {
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      border-radius: 10px;
+    }
+  }
+  .carousel-initialized{
+    .carousel-arrow{
+      color: white ;
+    }
   }
 }

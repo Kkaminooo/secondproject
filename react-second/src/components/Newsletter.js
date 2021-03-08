@@ -5,6 +5,7 @@ const Newsletter = () => {
             <p>Wpisz swój email</p>
             <input
                 type="text"
+                value="email"
             />
             <button>Wyślij</button>
         </form>

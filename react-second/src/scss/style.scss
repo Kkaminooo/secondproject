@@ -1,9 +1,12 @@
 @import "header";
 @import "logo";
 @import "slider";
-
+@import "content";
+@import "footer";
+@import "newsletter";
 
 $main-color: white;
+$main-font: 'Roboto', sans-serif;
 
 * {
   box-sizing: border-box;

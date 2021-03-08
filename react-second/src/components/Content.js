@@ -5,17 +5,17 @@ function Content (){
     return (
         <div className="content">
             <div>
-                <img src={icon1}/>
+                <img alt="foto" src={icon1}/>
                 <p>Tłoczymy płyty
                 </p>
             </div>
             <div>
-                <img src={icon2}/>
+                <img alt="foto" src={icon2}/>
                 <p>Dostarczanie materiałów na platformy streamingowe
                 </p>
             </div>
             <div>
-                <img src={icon3}/>
+                <img alt="foto" src={icon3}/>
                 <p>Monetyzacja YT
                 </p>
             </div>

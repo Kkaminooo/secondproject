@@ -19,8 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "sass --watch src/scss/style.scss src/css/style.css"
-
+    "scss": "sass --watch src/scss/style.scss src/css/style.css",
+    "build-css": "node-sass --include-path scss src/input.scss src/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.0.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
   }
 }
