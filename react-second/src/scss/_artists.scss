@@ -1,0 +1,55 @@
+$main-font: 'Roboto', sans-serif;
+
+
+.artists {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  .artists-container {
+    width: 30em;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+
+    h1 {
+      font-family: $main-font;
+      margin-bottom: 2em;
+
+    }
+
+    h3 {
+      font-family: $main-font;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-family: $main-font;
+      font-size: 40px;
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      font-family: $main-font;
+      font-size: 1.8em;
+      color: black;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: font-size 1s, color 1s, font-weight 1s;
+    }
+
+    a:hover {
+      font-size: 2.2em;
+      color:#52616a ;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

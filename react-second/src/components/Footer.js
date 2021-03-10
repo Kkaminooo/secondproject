@@ -3,12 +3,12 @@ import insta from '../images/instagram-brands.svg'
 import yt from '../images/youtube-brands.svg'
 const Footer = () =>{
     return(
-        <div className="footer">
+        <footer className="footer">
             <tr className="footer-categories"> KATEGORIE
-                <td>Wykonawcy</td>
-                <td>O nas</td>
-                <td>Sklep</td>
-                <td>Kontakt</td>
+                <a href="#artists">Wykonawcy</a>
+                <a href="">O nas</a>
+                <a href="">Sklep</a>
+                <a href="">Kontakt</a>
             </tr>
             <tr className="footer-information">INFORMACJE
                 <td>a</td>
@@ -17,11 +17,11 @@ const Footer = () =>{
             </tr>
             <div className="footer-social">
                 <h2>OBSERWUJ NAS</h2>
-                <img src={fb}/>
-                <img src={insta}/>
-                <img src={yt}/>
+                <a href="https://www.facebook.com/AutomatikPL"><img src={fb} /></a>
+                <a href="https://www.instagram.com/automatik.pl/"><img src={insta} /></a>
+                <a href="https://www.youtube.com/channel/UCItb8o-yCss2eSjtah-80TA"><img src={yt}/></a>
             </div>
-        </div>
+        </footer>
     )
 };
 export default Footer

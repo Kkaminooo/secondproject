@@ -1,0 +1,95 @@
+$main-font: 'Roboto', sans-serif;
+
+
+.modal {
+  font-family: $main-font;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 400px;
+  height: 250px;
+  background-color: #f0f5f9;
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+  a{
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    h1 {
+    }
+
+    p {
+    }
+
+    input {
+    }
+
+    button {
+      margin-top: 4em;
+      width: 5em;
+      border-radius: 5px;
+    }
+  }
+  .button {
+
+  }
+
+  .popup {
+
+    a {
+    }
+
+
+  }
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid black;
+    padding: 25px;
+
+    .button {
+      padding: 0.35em 1.2em;
+      border: 0.1em solid #52616a;
+      margin: 0 0.3em 0.3em 0;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      text-align: center;
+      transition: all 0.1s;
+      background-color: white;
+    }
+
+    .button:hover {
+      color: #000000;
+      background-color: #FFFFFF;
+      border: 0.5em solid #1e2022;
+
+    }
+
+    @media all and (max-width: 30em) {
+      .button {
+        display: block;
+        margin: 0.4em auto;
+      }
+    }
+  }
+
+
+}

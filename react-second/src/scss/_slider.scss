@@ -10,11 +10,13 @@
     justify-content: center;
     align-self: center;
     img {
-      height: 800px;
+      height: auto;
+      max-width: 1050px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-self: center;
-      border-radius: 10px;
+      border-radius: 8em;
     }
   }
   .carousel-initialized{

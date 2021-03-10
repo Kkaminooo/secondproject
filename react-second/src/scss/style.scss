@@ -4,9 +4,14 @@
 @import "content";
 @import "footer";
 @import "newsletter";
+@import "popup";
+@import "artists";
 
 $main-color: white;
 $main-font: 'Roboto', sans-serif;
+
+$phone: "(max-width:640px)";
+$desktop: "(min-width:640px)";
 
 * {
   box-sizing: border-box;

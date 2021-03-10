@@ -1,8 +1,28 @@
 $main-font: 'Roboto', sans-serif;
 
-.form{
-  font-family: $main-font;
-  h1{}
-  p{}
-  input{}
+.formView {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  .formBox {
+    width: 750px;
+    height: 200px;
+    border: 1px solid #c9d6de;
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 30px 50px rgba(201,214,222,0);    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    .form {
+      font-family: $main-font;
+
+      h1 {
+      }
+
+      p {
+      }
+
+      input {
+      }
+    }
+  }
 }

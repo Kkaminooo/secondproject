@@ -7,9 +7,13 @@
   width: 100%;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: #f0f5f9;
   background-color: black;
   font-family: "Roboto", sans-serif;
+}
+.App .App-header .header-artists a {
+  text-decoration: none;
+  color: #c9d6de;
 }
 .App .App-header .header-list {
   display: flex;
@@ -17,10 +21,18 @@
   align-self: center;
   list-style: none;
 }
+.App .App-header .header-list a {
+  text-decoration: none;
+  color: #c9d6de;
+}
 .App .App-header .header-list .header-element {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+.App .App-header .header-list .header-element a {
+  text-decoration: none;
+  color: #c9d6de;
 }
 
 .logo {
@@ -50,11 +62,13 @@
   align-self: center;
 }
 .slider div img {
-  height: 800px;
+  height: auto;
+  max-width: 1050px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-self: center;
-  border-radius: 10px;
+  border-radius: 8em;
 }
 .slider .carousel-initialized .carousel-arrow {
   color: white;
@@ -94,7 +108,7 @@
   display: flex;
   justify-content: space-evenly;
   align-self: center;
-  margin-top: 25px;
+  margin-top: 55px;
   background: black;
   background: linear-gradient(0deg, black 0%, #c6c6c6 0%, white 67%);
   font-family: "Roboto", sans-serif;
@@ -102,22 +116,158 @@
 .footer .footer-categories {
   display: flex;
   flex-direction: column;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
+}
+.footer .footer-categories a {
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
 }
 .footer .footer-information {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
 }
+.footer .footer-social {
+  text-decoration: none;
+  color: black;
+}
+.footer .footer-social h2 {
+  font-size: 1.1em;
+}
 .footer .footer-social img {
-  height: 45px;
-  width: 45px;
-  padding-right: 10px;
+  height: 40px;
+  width: 40px;
+  padding-right: 15px;
 }
 
-.form {
+.formView {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.formView .formBox {
+  width: 750px;
+  height: 200px;
+  border: 1px solid #c9d6de;
+  box-shadow: 0 10px 13px -7px #000000, 5px 5px 30px 50px rgba(201, 214, 222, 0);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.formView .formBox .form {
   font-family: "Roboto", sans-serif;
 }
+.modal {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 400px;
+  height: 250px;
+  background-color: #f0f5f9;
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+}
+.modal .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.modal .form button {
+  margin-top: 4em;
+  width: 5em;
+  border-radius: 5px;
+}
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.newsletter .newsletter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid black;
+  padding: 25px;
+}
+.newsletter .newsletter-container .button {
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #52616a;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.1s;
+  background-color: white;
+}
+.newsletter .newsletter-container .button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 0.5em solid #1e2022;
+}
+@media all and (max-width: 30em) {
+  .newsletter .newsletter-container .button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.artists {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+.artists .artists-container {
+  width: 30em;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.artists .artists-container h1 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2em;
+}
+.artists .artists-container h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+}
+.artists .artists-container h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.artists .artists-container a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: font-size 1s, color 1s, font-weight 1s;
+}
+.artists .artists-container a:hover {
+  font-size: 2.2em;
+  color: #52616a;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

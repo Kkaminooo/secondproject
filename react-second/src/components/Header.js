@@ -20,23 +20,29 @@ function Header(){
         <div className="App">
             <header className="App-header">
                 <ul className="header-list">
-                    <li>
+                    <li className="header-artists">
                         <a className= {font}
                             onMouseEnter={mover}
-                            onMouseLeave={leaver}>
-                            Wykonawcy
+                            onMouseLeave={leaver}
+                        href="#artists"
+                        >
+                            Artyści
                         </a>
                     </li>
                     <li className="header-element">
                         <a className= {font}
                             onMouseEnter={mover}
-                            onMouseLeave={leaver}>O nas
+                            onMouseLeave={leaver}
+                           href="http://5amartists.com/"
+                        >O nas
                         </a>
                     </li>
                     <li className="header-element">
                         <a className= {font}
                             onMouseEnter={mover}
-                            onMouseLeave={leaver}>Sklep
+                            onMouseLeave={leaver}
+                            href="http://plays.pl/"
+                        >Sklep
                         </a>
                     </li>
                     <li className="header-element">
@@ -50,14 +56,5 @@ function Header(){
         </div>
     )
 }
-
-
-// const Header = () => {
-//     return (
-//         <header>
-//             <h1>tracker</h1>
-//         </header>
-//     );
-// };
 
 export default Header;
